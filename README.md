@@ -16,27 +16,27 @@ This app is a project that processes subtitle data from a SQLite database, clean
 
 # Setup
 
-Install Dependencies:
+- Install Dependencies:
 ```bash
 pip install nltk pandas chromadb sentence-transformers whisper scikit-learn openai-whisper
 ```
-Download NLTK Resources:
+- Download NLTK Resources:
 
 The script downloads necessary NLTK data (e.g., stopwords) on first run.
 
-Google Drive Integration:
+- Google Drive Integration:
 
 If running in Colab, the project mounts Google Drive to access the database file.
 
 # Usage
 
-Extract Subtitles: Reads a specified database file and samples subtitle data.
+- Extract Subtitles: Reads a specified database file and samples subtitle data.
 
-Store Embeddings: Cleans and chunks the subtitle text, encodes them into embeddings, and stores them in a ChromaDB collection.
+- Store Embeddings: Cleans and chunks the subtitle text, encodes them into embeddings, and stores them in a ChromaDB collection.
 
-Search Subtitles: Transcribes an input audio file and queries the stored embeddings to return the most relevant subtitle snippets.
+- Search Subtitles: Transcribes an input audio file and queries the stored embeddings to return the most relevant subtitle snippets.
 
-Simply run the script to see a sample search result printed to the console.
+- Simply run the script to see a sample search result printed to the console.
   
-
+---
 This project provides a lightweight yet powerful framework to combine audio transcription with subtitle search, similar in spirit to Shazam's audio recognition, but applied to subtitle data.
