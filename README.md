@@ -1,4 +1,4 @@
-#Enhancing Search Engine Relevance for Video Subtitles
+# Enhancing Search Engine Relevance for Video Subtitles
 
 This app is a project that processes subtitle data from a SQLite database, cleans and chunks the text, and stores embeddings in a ChromaDB collection. It then leverages Whisper for audio transcription and a SentenceTransformer model to perform similarity searches against the stored subtitle embeddings.
 
@@ -14,7 +14,7 @@ Audio Transcription: Uses the Whisper model to convert audio files into text.
 
 Embedding and Search: Converts text chunks to embeddings using SentenceTransformer, stores them in ChromaDB, and retrieves relevant results via a TF-IDF and embedding-based search.
 
-#Setup
+# Setup
 
 Install Dependencies:
 ```bash
