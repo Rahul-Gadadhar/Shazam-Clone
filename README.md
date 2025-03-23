@@ -1,8 +1,8 @@
-Cloningshazam
+#Enhancing Search Engine Relevance for Video Subtitles
 
-Cloningshazam is a Python project that processes subtitle data from a SQLite database, cleans and chunks the text, and stores embeddings in a ChromaDB collection. It then leverages Whisper for audio transcription and a SentenceTransformer model to perform similarity searches against the stored subtitle embeddings.
+This app is a project that processes subtitle data from a SQLite database, cleans and chunks the text, and stores embeddings in a ChromaDB collection. It then leverages Whisper for audio transcription and a SentenceTransformer model to perform similarity searches against the stored subtitle embeddings.
 
-Features
+#Features
 
 Subtitle Extraction: Reads and decodes subtitle data from a zipped SQLite database.
 
@@ -14,12 +14,12 @@ Audio Transcription: Uses the Whisper model to convert audio files into text.
 
 Embedding and Search: Converts text chunks to embeddings using SentenceTransformer, stores them in ChromaDB, and retrieves relevant results via a TF-IDF and embedding-based search.
 
-Setup
+#Setup
 
 Install Dependencies:
-
+```bash
 pip install nltk pandas chromadb sentence-transformers whisper scikit-learn openai-whisper
-
+```
 Download NLTK Resources:
 
 The script downloads necessary NLTK data (e.g., stopwords) on first run.
